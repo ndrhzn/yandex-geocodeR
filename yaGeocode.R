@@ -7,7 +7,7 @@ geocode <- function(address) {
   for (i in address) {
     
     request <- GET("https://geocode-maps.yandex.ru/1.x/?format=json&", 
-                   query = list(geocode = i, lang=uk_UA))
+                   query = list(geocode = i, lang="uk_UA"))
     
     response <- content(request)
     
